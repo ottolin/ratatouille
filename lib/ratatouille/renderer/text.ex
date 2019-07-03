@@ -42,6 +42,8 @@ defmodule Ratatouille.Renderer.Text do
     end
   end
 
+  def grapheme_width(_any), do: 1
+
   def process_text(graphemes) do
     {rv, _} =
       graphemes
